@@ -24,7 +24,7 @@ Google Fonts — Poppins typeface
 Vercel — deployment and hosting
 
 **Demo Login Credentials:**
-Username and PIN : ds 1111, rs 2222, om 3333, ay 4444
+Username and PIN : ds 1111, rs 2222, om 3333, ay 4444.
 These credentials are public demo credentials, not real banking credentials.
 
 **Project Structure:**
