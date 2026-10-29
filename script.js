@@ -162,8 +162,8 @@ const displayMovements = function (acc, sort = false) {
     const html = `
       <div class="movements__row">
         <div class="movements__type movements__type--${type}">${
-      i + 1
-    } ${type}</div>
+          i + 1
+        } ${type}</div>
         <div class="movements__date">${displayDate}</div>
         <div class="movements__value">${formattedMov}</div>
       </div>
@@ -200,7 +200,7 @@ const calcDisplaySummary = function (cacc) {
   labelSumOut.textContent = formatCurr(
     Math.abs(outcomes),
     cacc.locale,
-    cacc.currency
+    cacc.currency,
   );
 
   const interest = cacc.movements
@@ -221,7 +221,7 @@ const calcDisplaySummary = function (cacc) {
   labelSumInterest.textContent = formatCurr(
     interest,
     cacc.locale,
-    cacc.currency
+    cacc.currency,
   );
 };
 
@@ -263,7 +263,7 @@ const startLogoutTimer = function () {
     }
     timer--;
   };
-  let timer = 120;
+  let timer = 300;
 
   tick();
   const time = setInterval(tick, 1000);
@@ -304,7 +304,7 @@ btnLogin.addEventListener('click', function (e) {
     };
     labelDate.textContent = new Intl.DateTimeFormat(
       currentAcc.locale,
-      options
+      options,
     ).format(now);
     // const days = `${now.getDate()}`.padStart(2, 0);
     // const months = `${now.getMonth()}`.padStart(2, 0);
